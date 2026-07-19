@@ -73,6 +73,7 @@ button.category-card{width:100%;color:var(--text);font-family:Inter,sans-serif;t
 
 /* Impede o menu off-canvas de vazar e arrastar a página no celular. */
 html,body{max-width:100%;overscroll-behavior-x:none}
+.channel-actions{flex-wrap:wrap}
 @supports (overflow:clip){html,body{overflow-x:clip}}
 @media(max-width:720px){
   .main-nav{transform:translate3d(110%,0,0);visibility:hidden;pointer-events:none;contain:layout paint;transition:transform .3s ease,visibility 0s linear .3s}
