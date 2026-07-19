@@ -35,8 +35,8 @@ const el = (tag, cls, html = '') => {
 };
 
 const categoryRules = {
-  'Setup gamer': p => ['SETUP GAMER', 'CONSOLE', 'CONTROLE', 'MOUSE GAMER', 'MONITOR GAMER'].includes(p.category),
-  'Periféricos': p => ['MOUSE GAMER', 'CONTROLE', 'ACESSÓRIOS'].includes(p.category),
+  'Setup gamer': p => ['SETUP GAMER', 'CONSOLE', 'CONTROLE', 'MOUSE GAMER', 'TECLADO GAMER', 'MONITOR GAMER'].includes(p.category),
+  'Periféricos': p => ['MOUSE GAMER', 'TECLADO GAMER', 'CONTROLE', 'ACESSÓRIOS'].includes(p.category),
   'Áudio': p => p.category === 'ÁUDIO',
   'Smartwatches': p => ['SMARTWATCH', 'ACESSÓRIO'].includes(p.category),
   'Consoles': p => ['CONSOLE', 'CONTROLE', 'SETUP GAMER'].includes(p.category),

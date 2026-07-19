@@ -2,6 +2,9 @@
 // Links externos são de afiliados e abrem em uma nova aba.
 window.N3_DATA = {
   products: [
+    { name: 'Logitech G213 Prodigy', category: 'TECLADO GAMER', rating: 4.7, price: 'Ver oferta', description: 'Teclado gamer de tamanho completo com RGB LIGHTSYNC, controles de mídia e apoio de pulso.', badge: 'SETUP GAMER', image: 'keyboard', photo: 'assets/products/logitech-g213.png', url: 'https://amzn.to/4vBCsTS' },
+    { name: 'Logitech G305 LIGHTSPEED', category: 'MOUSE GAMER', rating: 4.8, price: 'Ver oferta', description: 'Mouse gamer sem fio com sensor HERO, conexão LIGHTSPEED e bateria de longa duração.', badge: 'SEM FIO', image: 'g305', photo: 'assets/products/logitech-g305.png', url: 'https://amzn.to/4vBCsTS' },
+    { name: 'Redragon Zeus Pro H510-PRO', category: 'ÁUDIO', rating: 4.7, price: 'Ver oferta', description: 'Headset gamer sem fio com Bluetooth, baixa latência, drivers de 53 mm e microfone.', badge: 'BLUETOOTH', image: 'headset', photo: 'assets/products/redragon-zeus-pro.png', url: 'https://www.amazon.com.br/shop/n3rotech' },
     { name: 'Redmi Watch 5 Lite', category: 'SMARTWATCH', rating: 4.6, price: 'R$ 358', description: 'AMOLED grande, GPS integrado e autonomia excelente para a faixa de preço.', badge: 'DESTAQUE N3', image: 'watch', photo: 'assets/products/redmi-watch-5-lite.png', url: 'https://meli.la/1MDQhH7' },
     { name: 'Pulseira Milanese magnética', category: 'ACESSÓRIO', rating: 4.7, price: 'Ver oferta', description: 'Pulseira metálica com fecho magnético, disponível em 20 mm e 22 mm.', badge: 'COMPATÍVEL', image: 'strap', photo: 'assets/products/pulseira-milanese.png', url: 'https://s.shopee.com.br/LlkQdOG1j' },
     { name: 'Echo Dot 5ª geração', category: 'CASA INTELIGENTE', rating: 4.7, price: 'Ver oferta', description: 'Alexa, automações e som competente em um formato discreto.', badge: 'CASA CONECTADA', image: 'echo', photo: 'assets/products/echo-dot.jpg', url: 'https://meli.la/1wt3p7r' },
