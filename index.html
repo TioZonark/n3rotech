@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="N3rotech: reviews diretos, produtos testados e tecnologia que vale o seu dinheiro." />
+    <meta name="theme-color" content="#07080b" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+    <title>N3rotech — tecnologia sem enrolação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header" id="inicio">
+      <div class="container nav-wrap">
+        <a class="brand" href="#inicio" aria-label="N3rotech — início">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>N3RO<span>TECH</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+        <nav class="main-nav" aria-label="Navegação principal">
+          <a class="active" href="#inicio">Início</a>
+          <a href="#produtos">Produtos</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#setup">Setup</a>
+          <a href="#ofertas">Ofertas</a>
+          <a href="#sobre">Sobre</a>
+        </nav>
+        <a class="nav-cta" href="#destaques">Explorar <span>↗</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image" role="img" aria-label="Setup de tecnologia com teclado, headset, celular e caixa de som"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <div class="hero-copy reveal">
+            <div class="eyebrow"><span></span> TESTADO. COMPARADO. RECOMENDADO.</div>
+            <h1 id="hero-title">Tecnologia que realmente vale o <em>seu dinheiro.</em></h1>
+            <p>Produtos, acessórios e soluções tech testados ou pesquisados a fundo. Opiniões diretas, experiência real e zero enrolação.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#destaques">Ver recomendações <span>→</span></a>
+              <a class="button button-ghost" href="#reviews"><span class="play-dot">▶</span> Últimas análises</a>
+            </div>
+            <div class="trust-row" aria-label="Diferenciais N3rotech">
+              <div><strong>+120</strong><span>produtos analisados</span></div>
+              <div><strong>100%</strong><span>opinião independente</span></div>
+              <div><strong>4,9</strong><span>média da comunidade</span></div>
+            </div>
+          </div>
+          <aside class="hero-verdict reveal" aria-label="Veredito em destaque">
+            <div class="verdict-top"><span class="verdict-author"><img src="assets/n3rotech-profile.jpg" alt=""> VEREDITO RÁPIDO</span><span class="live-dot"></span></div>
+            <div class="verdict-product"><img class="mini-device" src="assets/products/redmi-watch-5-lite.png" alt="Redmi Watch 5 Lite"><div><small>DESTAQUE DO MÊS</small><strong>Redmi Watch 5 Lite</strong></div></div>
+            <div class="verdict-score"><strong>8,7</strong><span>/10<br />N3 SCORE</span></div>
+            <p>AMOLED, GPS e muita bateria por um preço que faz sentido.</p>
+            <a href="#testados">Ver análise completa <span>→</span></a>
+          </aside>
+        </div>
+        <a class="scroll-cue" href="#destaques" aria-label="Rolar para os destaques"><span></span>DESCUBRA MAIS</a>
+      </section>
+
+      <section class="ticker" aria-label="Categorias em destaque"><div class="ticker-track">
+        <span>SETUP GAMER</span><i>✦</i><span>PERIFÉRICOS</span><i>✦</i><span>ÁUDIO</span><i>✦</i><span>SMART HOME</span><i>✦</i><span>CUSTO-BENEFÍCIO</span><i>✦</i>
+        <span>SETUP GAMER</span><i>✦</i><span>PERIFÉRICOS</span><i>✦</i><span>ÁUDIO</span><i>✦</i><span>SMART HOME</span><i>✦</i><span>CUSTO-BENEFÍCIO</span><i>✦</i>
+      </div></section>
+
+      <section class="section" id="destaques">
+        <div class="container">
+          <div class="section-head reveal"><div><span class="kicker">CURADORIA N3ROTECH</span><h2>Destaques da semana<span>.</span></h2></div><p>Os produtos que mais chamaram nossa atenção — pelo desempenho, pelo preço ou por fazerem algo diferente.</p></div>
+          <div class="product-grid" id="product-grid" aria-live="polite"></div>
+          <div class="center-action"><button class="text-button" id="show-more" type="button">Ver todos os destaques <span>↓</span></button></div>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="testados">
+        <div class="container">
+          <div class="section-head reveal"><div><span class="kicker">PESQUISA, FICHA TÉCNICA E OPINIÕES REAIS</span><h2>Analisado pelo N3rotech<span>.</span></h2></div><p>Cruzamos dados oficiais, reviews independentes e relatos recorrentes de compradores. Sem fingir que testamos o que ainda não passou pela nossa bancada.</p></div>
+          <div class="tested-grid" id="tested-grid"></div>
+        </div>
+      </section>
+
+      <section class="section real-review-section" id="review-redmi">
+        <div class="container" id="real-review"></div>
+      </section>
+
+      <section class="section categories-section" id="setup">
+        <div class="container">
+          <div class="section-head reveal"><div><span class="kicker">ENCONTRE SEU PRÓXIMO UPGRADE</span><h2>Explore por categoria<span>.</span></h2></div></div>
+          <div class="category-grid" id="category-grid"></div>
+        </div>
+      </section>
+
+      <section class="section review-section" id="reviews">
+        <div class="container">
+          <div class="section-head reveal"><div><span class="kicker">RESPOSTA CURTA, EXPERIÊNCIA LONGA</span><h2>Vale a pena<span>?</span></h2></div><a class="section-link" href="#testados">Ver análises completas <span>→</span></a></div>
+          <div class="quick-grid" id="quick-grid"></div>
+        </div>
+      </section>
+
+      <section class="section social-channel-section" id="acompanhe">
+        <div class="container">
+          <div class="social-channel reveal">
+            <div class="channel-banner" aria-hidden="true"></div>
+            <div class="channel-content">
+              <img class="channel-avatar" src="assets/n3rotech-profile.jpg" alt="Foto de perfil da N3rotech">
+              <div class="channel-copy"><span class="kicker">ACOMPANHE A N3ROTECH</span><h2>@n3rotech</h2><p>Os primeiros vídeos ainda estão sendo preparados. Enquanto isso, acompanhe as novidades, bastidores e próximas recomendações nas redes oficiais.</p></div>
+              <div class="channel-actions">
+                <a class="button button-primary" href="https://www.youtube.com/@n3rotech" target="_blank" rel="noopener">YouTube <span>↗</span></a>
+                <a class="button button-ghost" href="https://www.instagram.com/n3rotech/" target="_blank" rel="noopener">Instagram <span>↗</span></a>
+                <a class="button button-ghost" href="https://www.tiktok.com/@n3rotech" target="_blank" rel="noopener">TikTok <span>↗</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container affiliate" id="ofertas">
+        <span class="affiliate-icon" aria-hidden="true">i</span>
+        <div><strong>Transparência sempre.</strong><p>Alguns links podem ser de afiliados. Se você comprar por eles, o N3rotech pode receber uma pequena comissão — sem alterar o preço que você paga. Isso ajuda a manter nossas análises independentes.</p></div>
+        <a href="#sobre">Saiba mais →</a>
+      </section>
+    </main>
+
+    <footer id="sobre">
+      <div class="container footer-main">
+        <div class="footer-brand"><a class="brand" href="#inicio"><span class="brand-mark"><i></i><i></i><i></i></span><span>N3RO<span>TECH</span></span></a><p>Tecnologia boa não precisa de complicação. A gente testa, compara e conta o que importa.</p><div class="footer-author"><img src="assets/n3rotech-profile.jpg" alt="Foto de perfil da N3rotech"><span><strong>@n3rotech</strong><small>Criador da N3rotech</small></span></div></div>
+        <div><h3>Explore</h3><a href="#destaques">Produtos</a><a href="#reviews">Reviews</a><a href="#setup">Setup</a><a href="#ofertas">Ofertas</a></div>
+        <div><h3>N3rotech</h3><a href="#sobre">Sobre nós</a><a href="mailto:contato@n3rotech.com">Contato</a><a href="#politica">Política de privacidade</a><a href="#termos">Termos de uso</a></div>
+        <div><h3>Conecte-se</h3><div class="socials"><a href="https://www.youtube.com/@n3rotech" target="_blank" rel="noopener" aria-label="YouTube da N3rotech">YT</a><a href="https://www.instagram.com/n3rotech/" target="_blank" rel="noopener" aria-label="Instagram da N3rotech">IG</a><a href="https://www.tiktok.com/@n3rotech" target="_blank" rel="noopener" aria-label="TikTok da N3rotech">TK</a></div><p class="social-handle">@n3rotech</p><p class="mail">contato@n3rotech.com</p></div>
+      </div>
+      <div class="container footer-bottom"><strong>N3rotech — tecnologia sem enrolação.</strong><span>© 2026 N3rotech. Feito com curiosidade e café.</span></div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
