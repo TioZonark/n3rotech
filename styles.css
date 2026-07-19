@@ -70,3 +70,12 @@ button.category-card{width:100%;color:var(--text);font-family:Inter,sans-serif;t
 @media(max-width:420px){
   .hero{min-height:650px}.hero-copy h1{font-size:39px}.hero-copy>p{font-size:11px}.trust-row{margin-top:20px}.product-card{flex-basis:86vw}.tested-card{flex-basis:89vw}.quick-card{flex-basis:86vw}.category-card,.category-card.featured{flex-basis:76vw}.section{padding:52px 0}.review-story h2{font-size:31px}
 }
+
+/* Impede o menu off-canvas de vazar e arrastar a página no celular. */
+html,body{max-width:100%;overscroll-behavior-x:none}
+@supports (overflow:clip){html,body{overflow-x:clip}}
+@media(max-width:720px){
+  .main-nav{transform:translate3d(110%,0,0);visibility:hidden;pointer-events:none;contain:layout paint;transition:transform .3s ease,visibility 0s linear .3s}
+  .menu-open .main-nav{transform:translate3d(0,0,0);visibility:visible;pointer-events:auto;transition:transform .3s ease,visibility 0s}
+  body.menu-open{overflow:hidden;touch-action:none}
+}
